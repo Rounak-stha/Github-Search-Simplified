@@ -1,11 +1,11 @@
-s<br />
+<br />
 <div align="center">
   <img src="/public/Logo.png" alt="Logo" width="80" height="80">
 
   <h3 align="center">Github Search Simplified</h3>
 
   <p align="center">
-    <a href="#">View Demo</a>
+    <a href="https://ghub-repo-search.netlify.app/">View Demo</a>
     ·
     <a href="https://github.com/Rounak-stha/Github-Search-Simplified/issues">Report Bug</a>
     ·
@@ -17,8 +17,10 @@ s<br />
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
- <img src='/public/Main_Page.png' alt='Product ScreenShot' />
- A web app created for seamlessly searching and filtering github repos. Searching and sorting in github can be a little tricky. This project is build to help ease the process. Many features like **Commit Search** and **Issue Search** is yet to be implemented here. Stay Tuned !
+
+<img src='/public/Main_Page.png' alt='Product ScreenShot' />
+
+A web app created for seamlessly searching and filtering github repos. Searching and sorting in github can be a little tricky. This project is build to help ease the process. Many features like **Commit Search** and **Issue Search** is yet to be implemented here. Stay Tuned !
 
 ### Built With
 
@@ -35,8 +37,6 @@ s<br />
 You must have node installed on your computer
 
 ### Installation
-
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
 1. Clone the repo
    ```sh
@@ -55,7 +55,7 @@ _Below is an example of how you can instruct your audience on installing and set
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-The main page jas search section with additionl filters. The results can be sorted in **ascending** or **descending** order w.r.t number of **stars**, **forks** or **updated time**. Additionally, you can filter out the results w.r.t programming **language** as well as the **owner** of the rpo.
+The main page has search section with additionl filters. The results can be sorted in **ascending** or **descending** order w.r.t number of **stars**, **forks** or **updated time**. Additionally, you can filter out the results w.r.t programming **language** as well as the **owner** of the rpo.
 
 
 
@@ -71,14 +71,14 @@ Contributions are **greatly appreciated**. Let's take the benefit of the open so
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with an **appropriate tag**.
 
-Don't forget to give the project a star! 
-
 1. Open an issue
 2. Fork the Project
 3. Create your Feature Branch
 4. Commit your Changes
 5. Push to the Branch
 6. Open a Pull Request
+
+Don't forget to give the project a star! 
 
 <!-- LICENSE -->
 ## License
