@@ -1,11 +1,10 @@
 s<br />
 <div align="center">
-  <img src="/Logo.png" alt="Logo" width="80" height="80">
+  <img src="/public/Logo.png" alt="Logo" width="80" height="80">
 
   <h3 align="center">Github Search Simplified</h3>
 
   <p align="center">
-    Your Repo Search Made Simple
     <a href="#">View Demo</a>
     ·
     <a href="https://github.com/Rounak-stha/Github-Search-Simplified/issues">Report Bug</a>
@@ -16,44 +15,16 @@ s<br />
 
 
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
-
-
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Github Search Simplified Screen Shot][github-search-simplified-screenshot]](https://github.com/Rounak-stha/Github-Search-Simplified/blob/main/public/Logo.png?raw=true)
+[![Github Search Simplified Screen Shot][github-search-simplified-screenshot]](/public/Logo.png?raw=true)
 
 A web app created for seamlessly searching and filtering github repos. Searching and sorting in github can be a little tricky. This project is build to help ease the process. Many features like **Commit Search** and **Issue Search** is yet to be implemented here. Stay Tuned !
 
 ### Built With
 
-* [![React][React.js]][https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjRqrePm6j7AhW37HMBHRBbAgsQFnoECAoQAQ&url=https%3A%2F%2Freactjs.org%2F&usg=AOvVaw26YbpVhaFnAB4A6G8-4uAs]
+* [![React][React.js]][https://reactjs.org/]
 
 
 <!-- GETTING STARTED -->
