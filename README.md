@@ -22,7 +22,7 @@ s<br />
 
 ### Built With
 
-* [![React][React.js]][https://reactjs.org/]
+* [React](https://reactjs.org/)
 
 
 <!-- GETTING STARTED -->
@@ -71,7 +71,7 @@ Contributions are **greatly appreciated**. Let's take the benefit of the open so
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with an **appropriate tag**.
 
-Don't forget to give the project a star! Thanks again!
+Don't forget to give the project a star! 
 
 1. Open an issue
 2. Fork the Project
