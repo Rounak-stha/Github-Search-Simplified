@@ -17,10 +17,8 @@ s<br />
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-[![Github Search Simplified Screen Shot][github-search-simplified-screenshot]](/public/Logo.png?raw=true)
-
-A web app created for seamlessly searching and filtering github repos. Searching and sorting in github can be a little tricky. This project is build to help ease the process. Many features like **Commit Search** and **Issue Search** is yet to be implemented here. Stay Tuned !
+ <img src='/public/Main_Page.png' alt='Product ScreenShot' />
+ A web app created for seamlessly searching and filtering github repos. Searching and sorting in github can be a little tricky. This project is build to help ease the process. Many features like **Commit Search** and **Issue Search** is yet to be implemented here. Stay Tuned !
 
 ### Built With
 
