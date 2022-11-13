@@ -30,15 +30,21 @@ function shiftPaginationNav(setPaginationRange, direction, maxEnd) {
             return { start: newStart, end: newEnd }
         })
     }
-    
+}
 
+function getPageFromQueryString(queryString) {
+    if (!queryString) return 0
+    let page = queryString.split('&').find(elem => elem.includes('page=') && !elem.includes('per_page='))
+    if (!page) return 1
+    page = page.split('=')[1]
+    return parseInt(page)
 
 }
 
 export default function PaginationNav({ queryString, totalCount, setResults, setLoading }) {
-    const [paginationRange, setPaginationRange] = useState({ start: 1, end: RESULTS_PER_PAGE })
-    const [page, setPage] = useState(1)
-
+    let page = getPageFromQueryString(queryString)
+    const [paginationRange, setPaginationRange] = useState({ start: page, end: page + RESULTS_PER_PAGE - 1})
+    console.log(paginationRange)
     const MAX_END = Math.floor(totalCount / RESULTS_PER_PAGE) + totalCount % RESULTS_PER_PAGE
 
     return (
@@ -47,15 +53,7 @@ export default function PaginationNav({ queryString, totalCount, setResults, set
             <li onClick={() => {
                 const start = paginationRange.start
                 if (start === 1) return
-                setLoading(true)
-                getRepoSearchResults(paginateQueryString(queryString, start - 1))
-                    .then(({ data, error }) => {
-                        if (error) return alert('Opps! An unknown Error Occoured')
-                        setLoading(false)
-                        setResults(data)
-                    })
                 shiftPaginationNav(setPaginationRange, 'left')
-                setPage(start - 1)
             }}>
                 <span className="block py-2 px-3 md:py-3 md:px-4 ml-0 leading-tight rounded-l-lg border bg-gray-12 border-bdr-dark text-gray-400 hover:bg-gray-13 hover:text-white">
                     <span className="sr-only">Previous</span>
@@ -73,7 +71,6 @@ export default function PaginationNav({ queryString, totalCount, setResults, set
                                 setLoading(false)
                                 if (error) return alert('Opps! An UnKnown Error Occoured')
                                 setResults(data)
-                                setPage(num)
                             }}
                             className={`cursor-pointer py-2 px-3 md:py-3 md:px-4 leading-tight border bg-gray-12 border-bdr-dark text-gray-400 ${page === num ? 'bg-gray-14' : 'hover:bg-gray-13 hover:text-white'}`}
                         >
@@ -85,15 +82,7 @@ export default function PaginationNav({ queryString, totalCount, setResults, set
             <li onClick={() => {
                 const end = paginationRange.end
                 if (end === MAX_END) return
-                setLoading(true)
-                getRepoSearchResults(paginateQueryString(queryString, end + 1))
-                    .then(({ data, error }) => {
-                        if (error) return alert('Opps! An unknown Error Occoured')
-                        setLoading(false)
-                        setResults(data)
-                    });
                 shiftPaginationNav(setPaginationRange, 'right', MAX_END)
-                setPage(end + 1)
             }}>
                 <span className="block py-2 px-3 md:py-3 md:px-4 leading-tight rounded-r-lg border bg-gray-12 border-bdr-dark text-gray-400 hover:bg-gray-13 hover:text-white">
                     <span className="sr-only">Next</span>

@@ -17,20 +17,20 @@ export default function SearchAndResults() {
                 { 
                     loading ? 
                         <div className="flex justify-center my-4"><Spinner /></div> : 
-                        results.total_count ? <SearchResults data={results} /> : 
+                        results.total_count ? (
+                            <>
+                                <SearchResults data={results} />
+                                <div className="flex justify-center">
+                                    <PaginationNav 
+                                        queryString={results.queryString} 
+                                        totalCount={results.total_count}
+                                        setResults={setResults}
+                                        setLoading={setLoading}  
+                                    />
+                                </div>
+                            </>
+                        ) : 
                         results.total_count === 0 ? <H1 className='text-center my-10 text-red-6'>Found no Repositories for that Search</H1> : null
-                }
-                {
-                    results.total_count ? (
-                        <div className="flex justify-center">
-                            <PaginationNav 
-                                queryString={results.queryString} 
-                                totalCount={results.total_count}
-                                setResults={setResults}
-                                setLoading={setLoading}  
-                            />
-                        </div>
-                    ) : null
                 }
             </div>
         </div>
