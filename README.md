@@ -7,6 +7,8 @@
   <p align="center">
     <a href="https://ghub-repo-search.netlify.app/">View Demo</a>
     ·
+    <a href="https://rounakstha.me/design">Design System</a>
+    ·
     <a href="https://github.com/Rounak-stha/Github-Search-Simplified/issues">Report Bug</a>
     ·
     <a href="https://github.com/Rounak-stha/Github-Search-Simplified/issues">Request Feature</a>
@@ -40,7 +42,7 @@ You must have node installed on your computer
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/Rounak-stha/Github-Search-Simplified.git
    ```
 2. Install NPM packages
    ```sh
@@ -55,7 +57,7 @@ You must have node installed on your computer
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-The main page has search section with additionl filters. The results can be sorted in **ascending** or **descending** order w.r.t number of **stars**, **forks** or **updated time**. Additionally, you can filter out the results w.r.t programming **language** as well as the **owner** of the rpo.
+The main page has search section with additionl filters. The results can be sorted in **ascending** or **descending** order w.r.t number of **stars**, **forks** or **updated time**. Additionally, you can filter out the results w.r.t programming **language** as well as the **owner** of the repo.
 
 
 
@@ -88,6 +90,6 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Rounak Stha - [@IamRstha](https://twitter.com/IamRstha) - rsthaofficial@gmail.com
+Rounak Stha - [@IamRstha](https://twitter.com/IamRstha) - [Website](https://rounakstha.me) - rsthaofficial@gmail.com
 
 Project Link: [https://github.com/Rounak-stha/Github-Search-Simplified](https://github.com/Rounak-stha/Github-Search-Simplified)
