@@ -10,3 +10,7 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.test:last-child {
+  border-bottom-width: 0;
+}
+

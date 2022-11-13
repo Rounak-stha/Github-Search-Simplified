@@ -53,7 +53,7 @@ export async function getRepoDetails(fullRepoName) {
         const data = await fetch(queryString).then(res => res.json()).then(data => data)
         const { 
             name, html_url, language, stargazers_count: stars, watchers, forks_count: forks, 
-            description, updated_at: updatedAt, open_issues: Issues, has_wiki: Wiki, has_pages: Pages, 
+            description, updated_at: updatedAt, open_issues_count: Issues, has_wiki: Wiki, has_pages: Pages, 
             has_projects: Projects, has_discussions: Discussions, allow_forking: Forking, is_template: Template, 
             network_count: Networks, subscribers_count: Subscribers, owner , default_branch: Branch, license
         } = data
@@ -63,7 +63,7 @@ export async function getRepoDetails(fullRepoName) {
             repoUrl: html_url, 
             userName: owner.login ,
             userUrl: owner.html_url,
-            language, stars, updatedAt, watchers, forks, description, Branch, license: license?.name, Issues, Discussions, Pages, 
+            language, stars, updatedAt, watchers, forks, description, Branch, license: license?.name, 'Issues and PRs': Issues, Discussions, Pages, 
             Wiki, Projects, Forking, Template, Networks, Subscribers,
         }
     } catch(err) {
